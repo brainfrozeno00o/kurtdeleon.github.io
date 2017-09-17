@@ -37,11 +37,12 @@
 #jumbotext-container {
 	margin-top: 7%;
 	margin-bottom: 3%;
+	text-align: center;
 }
 
-@media (max-width: 641px) {
+@media (min-width: 640px) {
     #jumbotext-container {
-        text-align: center;
+        text-align: left;
     }
 }
 
