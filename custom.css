@@ -39,7 +39,7 @@
 	margin-bottom: 3%;
 }
 
-@media (min-width: 630px) {
+@media (max-width: 641px) {
     #jumbotext-container {
         text-align: center;
     }
