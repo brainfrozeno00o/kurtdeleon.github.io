@@ -1,79 +1,60 @@
-html {
-  height: 100%;
-  overflow: hidden;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  -webkit-perspective: 1px;
-  perspective: 1px;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  height: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-  color: #00355e;
-  font-size: 1.10rem;
-}
-
-header {
-  box-sizing: border-box;
-  min-height: 40vw;
-  position: relative;
-  -webkit-transform-style: inherit;
-  transform-style: inherit;
-  width: 100vw;
-}
-
-header,
-header:before { background: 50% 50% / cover; }
-
-header::before {
-  bottom: 0;
-  content: "";
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  display: block;
-  background-color: #8a8;
-  background-image: url(assets/bg.jpg);
-  background-size: cover;
-  -webkit-transform-origin: center center 0;
-  -webkit-transform: translateZ(-1px) scale(2);
-  transform-origin: center center 0;
-  transform: translateZ(-1px) scale(2);
-  z-index: -1;
-  min-height: 100vh;
-}
-
-main {
-  line-height: 1.7;
-  position: relative;
-  z-index: 2;
-}
-
-.container-fluid, .container {
-  background-color: white;
-}
-
 .navbar-custom {
-    background-color: #004174;
+	background-color: black;
+
 }
 /* change the brand and text color */
-.navbar-custom .navbar-brand,
-.navbar-custom .navbar-text {
-    color: rgba(255,255,255);
+.navbar-custom a {
+	color: white;
+	opacity: .8;
+	font-size: 1.2rem;
+}
+.navbar-custom a:hover {
+	opacity: 1;
+}
 
+.jumbotron.jumbotron-fluid h1 {
+	font-family: 'Roboto Slab', serif;
+	font-weight: bold;
+	margin-bottom: 4%;
+	font-size: 3.0rem;
 }
-/* change the link color */
-.navbar-custom .navbar-nav .nav-link {
-    color: rgba(255,255,255,.5);
+
+#jumbo {
+	background-color:black; 
+	color:white; 
 }
-/* change the color of active or hovered links */
-.navbar-custom .nav-item.active .nav-link,
-.navbar-custom .nav-item:hover .nav-link {
-    color: #ffffff;
+
+.jumbotron.jumbotron-fluid .container-fluid {
+	width:82%;
+}
+
+#jumbotext {
+	margin-top: auto;
+  	position: relative;
+	padding-right: 15%;
+}
+
+#jumbotext-container {
+	margin-top: 7%;
+	margin-bottom: 3%;
+}
+
+#lead-text {
+	font-family: 'Roboto', sans-serif;
+	opacity: 0.7;
+}
+
+#lead-button {
+	background-color: #2c59eb;
+	font-size: 1rem;
+	padding: 3% 5%;
+	margin-top: 5%;
+}
+
+.nav.navbar-custom a .nav-link {
+	padding-right: 20%;
+}
+
+#talab-logo {
+	width: 22vw;
 }
