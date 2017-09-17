@@ -30,7 +30,7 @@
 
 #jumbotext {
 	margin-top: auto;
-  	position: relative;
+	position: relative;
 	padding-right: 15%;
 }
 
@@ -42,14 +42,15 @@
 
 
 @media (min-width: 640px) {
-    #jumbotext-container {
-        text-align: left;
+	#jumbotext-container {
+		text-align: left;
 
-    }
+	}
 
-    .nav.navbar-custom.navbar-collapse.collapse {
-    text-align: center;
-}
+	.nav.navbar-custom.navbar-collapse.collapse {
+		display:block;
+		text-align: center;
+	}
 
 }
 
