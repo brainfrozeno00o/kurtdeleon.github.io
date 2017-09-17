@@ -40,14 +40,14 @@
 	text-align: center;
 }
 
-@media (max-width: 640px) {
+@media (min-width: 640px) {
 	#jumbotext-container {
 		text-align: left;
 	}
 }
 
 @media (max-width: 1199px) {
-    .main {
+    #talablogo {
         display: none;
     }
 
