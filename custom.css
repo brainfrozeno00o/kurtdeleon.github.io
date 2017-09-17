@@ -47,7 +47,7 @@
 
 	}
 
-	.nav.navbar-custom.navbar-collapse.collapse {
+	.nav.navbar-custom.navbar-collapse.collapse a {
 		display:block;
 		text-align: center;
 	}
