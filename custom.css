@@ -40,18 +40,16 @@
 	text-align: center;
 }
 
-.nav .navbar-custom {
-    display: inline-block;
-    float: none;
-}
-.nav .navbar-custom .navbar-collapse .collapse {
-    text-align: center;
-}
 
 @media (min-width: 640px) {
     #jumbotext-container {
         text-align: left;
+
     }
+
+    .nav.navbar-custom.navbar-collapse.collapse {
+    text-align: center;
+}
 
 }
 
