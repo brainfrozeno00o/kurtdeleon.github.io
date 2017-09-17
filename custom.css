@@ -40,11 +40,11 @@
 	text-align: center;
 }
 
-.navbar .navbar-nav {
+.nav .navbar-custom {
     display: inline-block;
     float: none;
 }
-.navbar .navbar-collapse {
+.nav .navbar-custom .navbar-collapse .collapse {
     text-align: center;
 }
 
