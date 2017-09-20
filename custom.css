@@ -19,12 +19,16 @@
 	font-size: 3.0rem;
 }
 
+.jumbotron {
+	margin-bottom: 0;
+}
+
 #jumbo {
 	background-color:black; 
 	color:white; 
 }
 
-.jumbotron.jumbotron-fluid .container-fluid {
+#jumbotron-container {
 	width:82%;
 }
 
@@ -47,9 +51,10 @@
 }
 
 @media (max-width: 1199px) {
-    #talablogo {
-        display: none;
-    }
+	#talablogo {
+		display: none;
+	}
+}
 
 #lead-text {
 	font-family: 'Roboto', sans-serif;
@@ -69,4 +74,29 @@
 
 #talab-logo {
 	width: 22vw;
+}
+
+#form-filters {
+	height: 13vh;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+#filters-container{
+
+}
+
+div[class="row"] {
+    border: 1px dotted rgba(0, 0, 0, 0.5);
+}
+
+div[class^="col-"] {
+	border: 1px dotted rgba(255, 0, 0, 0.5);
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+#bg-filters {
+	background-color: #fbfbfb;
+	box-shadow: 1px 1px 2px 0 rgba(210, 210, 210, 0.5);
 }
