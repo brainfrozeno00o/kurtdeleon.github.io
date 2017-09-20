@@ -77,26 +77,31 @@
 }
 
 #form-filters {
-	height: 13vh;
+	height: 15vh;
 	display: flex;
 	align-items: center;
 	text-align: center;
-}
-
-#filters-container{
-
-}
-
-div[class="row"] {
-    border: 1px dotted rgba(0, 0, 0, 0.5);
-}
-
-div[class^="col-"] {
-	border: 1px dotted rgba(255, 0, 0, 0.5);
-    background-color: rgba(255, 0, 0, 0.2);
 }
 
 #bg-filters {
 	background-color: #fbfbfb;
 	box-shadow: 1px 1px 2px 0 rgba(210, 210, 210, 0.5);
 }
+
+#filterByTime, #filterByClassType, #filterBySGDTopic {
+	width: 80%;
+	padding: 20px 70px 20px 20px;
+	height: auto !important;
+	appearance: none;
+	border-radius: 5px;
+	background-color: #ffffff;
+	border: solid 1px #e2e2e2;
+	appearance: none; /* this is must */ 
+	-webkit-appearance: none; 
+	-moz-appearance: none;
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAQAAAC1QeVaAAAAl0lEQVQY07XQuwrCQBBG4SPuiIkrJpsixL2glSBiK2l8BEVIkBSKYOf791oEIoo2gpzyg+FnuPM9fkdlyMk+lA8yzFAF5vi3ZoRVhCEVZfEUTLs8FllDQvrKBR67lT07SJiQYpSy+Jb6biNXzjQtJs/jHtuThhMVNWhiNCPGaMGpsJAlBxpqarp5jkAWlfGNC0eqFv/zvgfs5GOxKH23BwAAAABJRU5ErkJggg==') 85% 50% no-repeat;
+}
+
+
+.hideoption { display:none; visibility:hidden; height:0; font-size:0; }
+

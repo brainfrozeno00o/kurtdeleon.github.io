@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="custom.css">
   <!-- Font Face Used -->
@@ -43,16 +45,17 @@
   <main>
     <div id="bg-filters">
     <form class="form-inline" id="form-filters">
-      <div class="container-fluid" id="filters-container">
+      <div class="container-fluid">
         <div class="row justify-content-center">
           <!-- Filters -->
-          <div class="col-sm-1">
-            <label>FILTERS</label>
+          <div class="col-sm-1 align-self-center" id="filters-label">
+            <span>FILTERS</span>
           </div>
 
           <!-- Filter by Time -->
           <div class="col-sm-2">
-            <select class="form-control form-block" id="filterByTime">
+            <select class="form-control" id="filterByTime">
+              <option selected disabled class="hideoption">By Time</option>
               <option>10:00 AM</option>
               <option>11:00 AM</option>
               <option>12:00 NN</option>
@@ -61,7 +64,8 @@
 
           <!-- Filter by Class Type -->
           <div class="col-sm-3">
-            <select class="form-control" id="filterByClassType">
+            <select class="form-control" id="filterByClassType"">
+              <option selected disabled class="hideoption">By Class Type</option>
               <option>Politics</option>
               <option>Sexuality</option>
               <option>Art & Poetry</option>
@@ -71,6 +75,7 @@
           <!-- Filter by SGD Topic -->
           <div class="col-sm-4">
             <select class="form-control" id="filterBySGDTopic">
+              <option selected disabled class="hideoption">By SGD Topic</option>
               <option>ASDFASDFASDF</option>
               <option>eeqwerqwerqwer</option>
               <option>q#$#$&w$%&@$t</option>
