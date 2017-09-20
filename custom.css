@@ -68,9 +68,12 @@ hr {
 	margin-bottom: 0;
 }
 
-#jumbo {
+#jumbo, #jumbo-info {
 	background-color:black; 
 	color:white;
+}
+
+#jumbo-info {
 	padding-bottom: 15%; 
 }
 
