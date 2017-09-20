@@ -1,7 +1,52 @@
 .navbar-custom {
 	background-color: black;
-
 }
+
+.info-area {
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-top: -15%;
+	padding: 5%;
+	background-color: white;
+	box-shadow: 2px 2px 4px 0 rgba(207, 207, 207, 0.5);
+}
+
+.center{
+	text-align: center;
+}
+
+.subheader {
+	margin-top: -3%;
+}
+
+/* attempt to make the white box*/
+#info-box {
+	background-color: grey;
+	opacity: 0.5;
+	margin: 0% -30% 0% 15%;
+}
+
+.roboto-text {
+	font-family: 'Roboto', serif;
+}
+
+.robotoslab-text {
+	font-family: 'Roboto Slab', serif;
+}
+
+.title-left {
+	margin-right: 45%;
+}
+
+.hashtag {
+	font-size: 0.85rem;
+	opacity: 0.8;
+}
+
+hr {
+	padding: 5px;
+}
+
 /* change the brand and text color */
 .navbar-custom a {
 	color: white;
@@ -25,7 +70,8 @@
 
 #jumbo {
 	background-color:black; 
-	color:white; 
+	color:white;
+	padding-bottom: 15%; 
 }
 
 #jumbotron-container {
