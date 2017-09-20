@@ -154,3 +154,40 @@ hr {
 
 .hideoption { display:none; visibility:hidden; height:0; font-size:0; }
 
+#imaginary_container{
+	margin-top:5%; 
+}
+.stylish-input-group .input-group-addon{
+	border: none;
+	background: white; 
+	border-bottom: solid 1px #e2e2e2;
+}
+.stylish-input-group .form-control{
+	border: none;
+	border-bottom: solid 1px #e2e2e2;
+	font-size: 1.2rem;
+	color: #a5a5a5;
+}
+
+.stylish-input-group .form-control:hover{
+	color: #444444;
+}
+
+.stylish-input-group button{
+	border: none;
+	background:transparent;
+}
+
+#footer-black {
+	background-color: #000000;
+	height: 13vh;
+}
+
+#footer-icons {
+	line-height: inherit; 
+}
+
+i.fa {
+  vertical-align: middle;
+}
+

@@ -44,48 +44,88 @@
 
   <main>
     <div id="bg-filters">
-    <form class="form-inline" id="form-filters">
-      <div class="container-fluid">
-        <div class="row justify-content-center">
-          <!-- Filters -->
-          <div class="col-sm-1 align-self-center" id="filters-label">
-            <span>FILTERS</span>
-          </div>
+      <form class="form-group form-inline" id="form-filters">
+        <div class="container-fluid">
+          <div class="row justify-content-center">
+            <!-- Filters -->
+            <div class="col-sm-1 align-self-center" id="filters-label">
+              <span>FILTERS</span>
+            </div>
 
-          <!-- Filter by Time -->
-          <div class="col-sm-2">
-            <select class="form-control" id="filterByTime">
-              <option selected disabled class="hideoption">By Time</option>
-              <option>10:00 AM</option>
-              <option>11:00 AM</option>
-              <option>12:00 NN</option>
-            </select>
-          </div>
+            <!-- Filter by Time -->
+            <div class="col-sm-2">
+              <select class="form-control" id="filterByTime">
+                <option selected disabled class="hideoption">By Time</option>
+                <option>10:00 AM</option>
+                <option>11:00 AM</option>
+                <option>12:00 NN</option>
+              </select>
+            </div>
 
-          <!-- Filter by Class Type -->
-          <div class="col-sm-3">
-            <select class="form-control" id="filterByClassType"">
-              <option selected disabled class="hideoption">By Class Type</option>
-              <option>Politics</option>
-              <option>Sexuality</option>
-              <option>Art & Poetry</option>
-            </select>
-          </div>
+            <!-- Filter by Class Type -->
+            <div class="col-sm-3">
+              <select class="form-control" id="filterByClassType"">
+                <option selected disabled class="hideoption">By Class Type</option>
+                <option>Politics</option>
+                <option>Sexuality</option>
+                <option>Art & Poetry</option>
+              </select>
+            </div>
 
-          <!-- Filter by SGD Topic -->
-          <div class="col-sm-4">
-            <select class="form-control" id="filterBySGDTopic">
-              <option selected disabled class="hideoption">By SGD Topic</option>
-              <option>ASDFASDFASDF</option>
-              <option>eeqwerqwerqwer</option>
-              <option>q#$#$&w$%&@$t</option>
-            </select>
+            <!-- Filter by SGD Topic -->
+            <div class="col-sm-4">
+              <select class="form-control" id="filterBySGDTopic">
+                <option selected disabled class="hideoption">By SGD Topic</option>
+                <option>ASDFASDFASDF</option>
+                <option>eeqwerqwerqwer</option>
+                <option>q#$#$&w$%&@$t</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center" style="margin: 0">
+        <div class="col-sm-6">
+          <div id="imaginary_container"> 
+            <div class="input-group stylish-input-group">
+              <span class="input-group-addon">
+                <button type="submit">
+                  <img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAAAAABWESUoAAAA80lEQVQ4y82TWwuCQBCF+/9/pYdKCaTL6gZdLCWy2FK3KA0lpAsEShZuFBTOuuFr87Sw3w5n5pytsJKq/BuQeAaeHm6/gIvZVnVzqKJZLAQcaRSljGVJiJVAALhN73N82HJYACIlzPVdtRIe0HUgDREOOLYiAPhqCoH5EE6f4iMAbp0lt5/eFgDXusMBGoUd2oTv4EEN1oDToEEN7KLAKTx05/Yw6efvM+Tyizo3djmA4KzgBZXW3/d2lQjcpNLAfzlwpRom3UCQh5OBemND15AVM9oMhYnamGNr/3j7WfNLMrmQg5LQuvKmJNWOlf3jzxLVE3Yw5OjE4lorAAAAAElFTkSuQmCC'/>
+                </button>  
+              </span>
+              <input type="text" class="form-control"  placeholder="Search for classes">
+            </div>
           </div>
         </div>
       </div>
     </form>
-  </div>
+
+    <div>
+      <h1 class="display-5">Available Classes</h1>
+    </div>
+
+    <div class="grid">
+        <p> sadfasdfasdfasdfasdfasdf</p>
+    </div>
   </main>
+
+  <footer class="text-white">
+    <div class="container-fluid">
+      <div class="row justify-content-between align-items-center" id="footer-black">
+        <div class="col-sm-3" style="margin-left: 5%">
+          <p class="lead" style="margin:auto">TALAB 2017 - Talakayang Alay sa Bayan</p>
+        </div>
+        <div class="col-sm-2" style="margin-right: 5%">
+          <ul class="nav">
+            <li class="footer-icons"><a href="#" class="nav-link pl-0"><i class="fa fa-facebook fa-2x fa-fw" style="color: white"></i></a></li>
+            <li class="footer-icons"><a href="#" class="nav-link"><i class="fa fa-twitter fa-2x fa-fw" style="color: white"></i></a></li>
+            <li class="footer-icons"><a href="#" class="nav-link"><i class="fa fa-envelope-o fa-2x fa-fw" style="color: white"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
