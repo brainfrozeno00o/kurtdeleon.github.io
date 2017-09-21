@@ -1,3 +1,7 @@
+html,body{
+    height: 100%
+}
+
 .navbar-custom {
 	background-color: black;
 }
@@ -316,4 +320,5 @@ li #footer-icons {
 		vertical-align: middle;
 	}
 }
+
 
