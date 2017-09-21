@@ -48,7 +48,7 @@ hr {
 }
 
 /* change the brand and text color */
-.navbar-custom a {
+#navbar-main a {
 	color: white;
 	opacity: .8;
 	font-size: 1.2rem;
@@ -154,6 +154,8 @@ hr {
 
 .hideoption { display:none; visibility:hidden; height:0; font-size:0; }
 
+
+/* -- SEARCH BAR -- */
 #imaginary_container{
 	margin-top:5%; 
 }
@@ -178,6 +180,8 @@ hr {
 	background:transparent;
 }
 
+
+/* -- FOOTER -- */
 #footer-black {
 	background-color: #000000;
 	height: 13vh;
@@ -187,17 +191,39 @@ hr {
 	line-height: inherit; 
 }
 
-i.fa {
-	vertical-align: middle;
+#footer-label-container {
+	text-align: left;
+	margin-left: 8%;
 }
 
-.row{
-	overflow: hidden; 
+#footer-icons-container {
+	margin-right: 1%;
+}
+
+li #footer-icons {
+	text-align: right;
+}
+
+@media only screen and (max-width: 1120px) {
+	#footer-label-container {
+		margin:0;
+		text-align: center;
+		margin-top: auto;
+	}
+
+	#footer-icons-container {
+		margin: 0;
+		width: 45%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+
+	}
 }
 
 
 
-
+/* -- CARD DECKS (Class Results) -- */
 .title {
 	font-weight: 600;
 	font-size: 1.2rem;
@@ -237,18 +263,14 @@ i.fa {
 
 .card-links, .card-links:hover {
 	color: inherit;
-    text-decoration: none;
+	text-decoration: none;
 }
 
 .card-links:hover {
 	opacity: 0.70;
 }
 
-.card-block {
-	height: 100%;
-}
-
-.class-row {
+.card-block, .class-row {
 	height: 100%;
 }
 
@@ -257,8 +279,18 @@ i.fa {
 	margin-top: 5vh;
 }
 
-@media only screen and (max-width: 641px) {
-    #box-title {
-        text-align: center;
-    }
+@media only screen and (max-width: 1120px) {
+	#box-title {
+		margin-left: 0;
+		text-align: center;
+	}
+}
+
+div[class="row"] {
+	border: 1px dotted rgba(0, 0, 0, 0.5);
+}
+
+div[class^="col-"] {
+	border: 1px dotted rgba(255, 0, 0, 0.5);
+	background-color: rgba(255, 0, 0, 0.2);
 }
