@@ -1,5 +1,5 @@
 html,body{
-	height: 100%
+	height: 100%;
 }
 
 .navbar-custom {
@@ -52,14 +52,7 @@ hr {
 }
 
 /* change the brand and text color */
-#navbar-main a {
-	color: white;
-	opacity: .8;
-	font-size: 1.2rem;
-}
-.navbar-custom a:hover {
-	opacity: 1;
-}
+
 
 .jumbotron.jumbotron-fluid h1 {
 	font-family: 'Roboto Slab', serif;
@@ -94,18 +87,20 @@ hr {
 #jumbotext-container {
 	margin-top: 7%;
 	margin-bottom: 3%;
-	text-align: center;
+	text-align: left;
 }
 
-@media (min-width: 640px) {
+@media (max-width: 960px) {
 	#jumbotext-container {
-		text-align: left;
+		text-align: center;
 	}
-}
 
-@media only screen and (max-width: 641px) {
-	#logo {
-		visibility: hidden;
+	#jumbotext{
+		padding: 0;
+	}
+
+	#jumbotext-container {
+		margin-bottom: auto;
 	}
 }
 
@@ -121,14 +116,49 @@ hr {
 	margin-top: 5%;
 }
 
-.nav.navbar-custom a .nav-link {
-	padding-right: 20%;
-}
-
 #talab-logo {
 	width: 21vw;
 }
 
+/* -- Main NavBar --*/
+#navbar-main a {
+
+	color: white;
+	opacity: .8;
+	font-size: 1.2rem;
+}
+
+#navbar-main a:hover {
+	opacity: 1;
+}
+
+@media (max-width: 576px) {
+	#navbar-main a {
+		margin-top: 10px;
+		margin-bottom: -10px;
+	}
+}
+
+@media (min-width: 577px){
+	#navbar-main, #navbar-c {
+		width: 100%;
+	}
+
+	#nav-home {
+		margin-right: 45px;
+	}
+
+	#nav-contact {
+		margin-left: auto;
+	}
+}
+
+.custom-toggler.navbar-toggler {
+	border-color: rgb(255,255,255);
+}
+.custom-toggler .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
 
 /* -- CARD DECKS (Class Results) -- */
 .hideoption { display:none; visibility:hidden; height:0; font-size:0; }
@@ -166,7 +196,7 @@ hr {
 	}
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 768px) {
 	#form-filters {
 		margin: 0;
 	}
@@ -180,14 +210,9 @@ hr {
 	}
 }
 
-
-
-
-
-
 /* -- SEARCH BAR -- */
 #imaginary_container{
-	margin-top:5%; 
+	margin-top:6%; 
 }
 .stylish-input-group .input-group-addon{
 	border: none;
@@ -208,6 +233,13 @@ hr {
 .stylish-input-group button{
 	border: none;
 	background:transparent;
+}
+
+@media (max-width: 576px) {
+	#imaginary_container{
+		margin-top:10%; 
+	}
+
 }
 
 /* -- CARD DECKS (Class Results) -- */
@@ -337,4 +369,13 @@ li #footer-icons {
 	}
 }
 
+/** SHOW BORDERS OF GRIDS
+div[class="row"] {
+	border: 1px dotted rgba(0, 0, 0, 0.5);
+}
 
+div[class^="col-"] {
+	border: 1px dotted rgba(255, 0, 0, 0.5);
+	background-color: rgba(255, 0, 0, 0.2);
+}
+**/
