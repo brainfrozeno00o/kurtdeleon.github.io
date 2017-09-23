@@ -16,24 +16,26 @@
 </head>
 
 <body>
-  <!-- Parallax-Scroll Header -->
+  <!-- JUMBOTRON -->
   <header>
     <div class="jumbotron jumbotron-fluid" id="jumbo" >
       <div class="container-fluid" id="jumbotron-container">
         <div class="row">
-          <nav class="nav navbar-custom navbar-collapse collapse" id="navbar-main">
-            <a class="nav-link" href="#" style="padding-right: 5%">Home</a>
+          <nav class="nav navbar-custom navbar-collapse" id="navbar-main">
+            <a class="nav-link" href="#">Home</a>
             <a class="nav-link" href="#">About TALAB</a>
             <a class="nav-link ml-auto" href="#">Contact Us</a>
           </nav>
         </div>
-
+        <!-- Title and Subtitle -->
         <div class="row" id="jumbotext-container">
           <div class="col-sm-8" id="jumbotext">
             <h1 class="display-5">TALAB Classes 2017</h1>
             <p class="lead" id="lead-text">TALAB is an annual event that aims to engage students with the current discourse in the country. Here you can know more about the classes offered this year by TALAB.</p>
             <p class="lead"><a class="btn btn-primary btn-lg" href="#" role="button" id="lead-button">Check batch number</a></p>
           </div>
+
+          <!-- TALAB Logo -->
           <div class="col-sm-4" id="logo">
             <img src="assets/talab-logo.png" class="img-fluid mx-auto d-block hidden-md-down" alt="Responsive image" id="talab-logo">
           </div>
@@ -42,69 +44,71 @@
     </div>
   </header>
 
+  <!-- MAIN BODY -->
   <main>
-    <div id="bg-filters">
-      <form class="form-group form-inline" id="form-filters">
-        <div class="container-fluid">
-          <div class="row justify-content-center">
-            <!-- Filters -->
-            <div class="col-sm-1 align-self-center" id="filters-label">
-              <span>FILTERS</span>
-            </div>
+    <!-- FILTERS -->
+    <div class="container-fluid" id="form-filters">
+      <div class="row justify-content-center" >
+        <!-- Filters -->
+        <div class="col-lg-1 col-md-12 col-sm-3 col-xs-10 align-self-center" id="filters-label">
+          <span>FILTERS</span>
+        </div>
 
-            <!-- Filter by Time -->
-            <div class="col-sm-2">
-              <select class="form-control" id="filterByTime">
-                <option selected disabled class="hideoption">By Time</option>
-                <option>10:00 AM</option>
-                <option>11:00 AM</option>
-                <option>12:00 NN</option>
-              </select>
-            </div>
+        <!-- Filter by Time -->
+        <div class="col-lg-2 col-md-5 col-sm-7 col-xs-10 align-self-center">
+          <select class="form-control" id="filterByTime">
+            <option selected disabled class="hideoption">By Time</option>
+            <option>10:00 AM</option>
+            <option>11:00 AM</option>
+            <option>12:00 NN</option>
+          </select>
+        </div>
 
-            <!-- Filter by Class Type -->
-            <div class="col-sm-3">
-              <select class="form-control" id="filterByClassType"">
-                <option selected disabled class="hideoption">By Class Type</option>
-                <option>Politics</option>
-                <option>Sexuality</option>
-                <option>Art and Poetry</option>
-              </select>
-            </div>
 
-            <!-- Filter by SGD Topic -->
-            <div class="col-sm-4">
-              <select class="form-control" id="filterBySGDTopic">
-                <option selected disabled class="hideoption">By SGD Topic</option>
-                <option>ASDFASDFASDF</option>
-                <option>eeqwerqwerqwer</option>
-                <option>q#$#$ssdsd$t</option>
-              </select>
-            </div>
+        <!-- Filter by Class Type -->
+        <div class="col-lg-3 col-md-7 col-sm-10 col-xs-10 align-self-center">
+          <select class="form-control" id="filterByClassType"">
+            <option selected disabled class="hideoption">By Class Type</option>
+            <option>Politics</option>
+            <option>Sexuality</option>
+            <option>Art and Poetry</option>
+          </select>
+        </div>
+
+        <!-- Filter by SGD Topic -->
+        <div class="col-lg-4 col-md-10 col-sm-10 col-xs-10 align-self-center">
+          <select class="form-control" id="filterBySGDTopic">
+            <option selected disabled class="hideoption">By SGD Topic</option>
+            <option>ASDFASDFASDF</option>
+            <option>eeqwerqwerqwer</option>
+            <option>q#$#$ssdsd$t</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <!-- Search bar -->
+    <div class="row justify-content-center" style="margin: 0">
+      <div class="col-lg-6 col-md-8">
+        <div id="imaginary_container"> 
+          <div class="input-group stylish-input-group">
+            <span class="input-group-addon">
+              <button type="submit">
+                <img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAAAAABWESUoAAAA80lEQVQ4y82TWwuCQBCF+/9/pYdKCaTL6gZdLCWy2FK3KA0lpAsEShZuFBTOuuFr87Sw3w5n5pytsJKq/BuQeAaeHm6/gIvZVnVzqKJZLAQcaRSljGVJiJVAALhN73N82HJYACIlzPVdtRIe0HUgDREOOLYiAPhqCoH5EE6f4iMAbp0lt5/eFgDXusMBGoUd2oTv4EEN1oDToEEN7KLAKTx05/Yw6efvM+Tyizo3djmA4KzgBZXW3/d2lQjcpNLAfzlwpRom3UCQh5OBemND15AVM9oMhYnamGNr/3j7WfNLMrmQg5LQuvKmJNWOlf3jzxLVE3Yw5OjE4lorAAAAAElFTkSuQmCC'/>
+              </button>  
+            </span>
+            <input type="text" class="form-control"  placeholder="Search for classes">
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="row justify-content-center" style="margin: 0">
-        <div class="col-sm-6">
-          <div id="imaginary_container"> 
-            <div class="input-group stylish-input-group">
-              <span class="input-group-addon">
-                <button type="submit">
-                  <img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAAAAABWESUoAAAA80lEQVQ4y82TWwuCQBCF+/9/pYdKCaTL6gZdLCWy2FK3KA0lpAsEShZuFBTOuuFr87Sw3w5n5pytsJKq/BuQeAaeHm6/gIvZVnVzqKJZLAQcaRSljGVJiJVAALhN73N82HJYACIlzPVdtRIe0HUgDREOOLYiAPhqCoH5EE6f4iMAbp0lt5/eFgDXusMBGoUd2oTv4EEN1oDToEEN7KLAKTx05/Yw6efvM+Tyizo3djmA4KzgBZXW3/d2lQjcpNLAfzlwpRom3UCQh5OBemND15AVM9oMhYnamGNr/3j7WfNLMrmQg5LQuvKmJNWOlf3jzxLVE3Yw5OjE4lorAAAAAElFTkSuQmCC'/>
-                </button>  
-              </span>
-              <input type="text" class="form-control"  placeholder="Search for classes">
-            </div>
-          </div>
-        </div>
-      </div>
-    </form>
-
+    <!-- Available Classes Title -->
     <div class="container-fluid">
       <h3 class="display-5 font-weight-bold" id="box-title">AVAILABLE CLASSES</h3>
     </div>
 
+    <!-- Classes (Results) -->
     <div class="card-deck" style="margin: 0; margin-bottom: 3%">
       <div class="row justify-content-center" style="margin: 0" >
         <!-- CARD -->
@@ -163,6 +167,7 @@
     </div>
   </main>
 
+  <!-- FOOTER -->
   <footer class="text-white">
     <div class="container-fluid">
       <div class="row justify-content-between align-items-center" id="footer-black">
