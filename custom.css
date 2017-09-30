@@ -1,5 +1,6 @@
-html,body{
-	height: 100%;
+html{
+	position: relative;
+	min-height: 100%;
 }
 
 .navbar-custom {
@@ -325,7 +326,8 @@ hr {
 /* -- FOOTER -- */
 #footer-black {
 	background-color: #000000;
-	height: 13vh;
+	padding: 2% 2%;
+	
 }
 
 #footer-icons {
@@ -367,9 +369,14 @@ li #footer-icons {
 	.footer-icons {
 		margin: auto;
 	}
+
+	p.footer-label {
+		font-size: 1.0rem;
+	}
 }
 
-/** SHOW BORDERS OF GRIDS
+/** SHOW BORDERS OF GRIDS**/
+/** <-- delete to use
 div[class="row"] {
 	border: 1px dotted rgba(0, 0, 0, 0.5);
 }
@@ -378,4 +385,4 @@ div[class^="col-"] {
 	border: 1px dotted rgba(255, 0, 0, 0.5);
 	background-color: rgba(255, 0, 0, 0.2);
 }
-**/
+
