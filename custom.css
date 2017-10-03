@@ -187,7 +187,7 @@ hr {
 	background-color: #ffffff;
 }
 
-@media only screen and (max-width: 992px) {
+@media (max-width: 992px) {
 	#filterByTime, #filterByClassType, #filterBySGDTopic {
 		margin: 1% 0;
 	}
@@ -197,7 +197,7 @@ hr {
 	}
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
 	#form-filters {
 		margin: 0;
 	}
@@ -299,7 +299,7 @@ hr {
 	margin-top: 5vh;
 }
 
-@media only screen and (max-width: 1120px) {
+@media (max-width: 1120px) {
 	#box-title {
 		margin-left: 0;
 		text-align: center;
@@ -351,7 +351,7 @@ li #footer-icons {
 	text-align: right;
 }
 
-@media only screen and (max-width: 1140px) {
+@media (max-width: 1140px) {
 	#footer-label-container {
 		margin:0;
 		text-align: center;
