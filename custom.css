@@ -330,8 +330,7 @@ hr {
 }
 
 #box-title {
-	margin-left: 10vw;
-	margin-top: 5vh;
+	margin: 5vh 0 5vh 10vw;
 }
 
 @media (max-width: 1120px) {
