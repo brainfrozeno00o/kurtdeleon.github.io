@@ -75,9 +75,9 @@
         <div class="col-lg-3 col-md-7 col-sm-10 col-xs-10 align-self-center">
           <select class="form-control" id="filterByClassType"">
             <option selected disabled class="hideoption">By Class Type</option>
-            <option>Politics</option>
-            <option>Sexuality</option>
-            <option>Art and Poetry</option>
+            <option>Talk</option>
+            <option>Excursion</option>
+            <option>Workshop</option>
           </select>
         </div>
 
@@ -85,9 +85,9 @@
         <div class="col-lg-4 col-md-10 col-sm-10 col-xs-10 align-self-center">
           <select class="form-control" id="filterBySGDTopic">
             <option selected disabled class="hideoption">By SGD Topic</option>
-            <option>ASDFASDFASDF</option>
-            <option>eeqwerqwerqwer</option>
-            <option>q#$#$ssdsd$t</option>
+            <option>SGD 1</option>
+            <option>SGD 2</option>
+            <option>SGD 3</option>
           </select>
         </div>
       </div>
@@ -124,10 +124,12 @@
         <a class="card-links" href="info.html">
           <div class="row justify-content-center class-row">
             <div class="col-sm-8 my-3" id="class-info">
-              <h5 class="title">Youth Leadership in Asian Development</h5>
+              <h5 class="title">Youth Leadership in Asian Development (9:00 AM, Talk, SGD 1)</h5>
               <p class="description">A talk on how youth leadership is essential for future progress. A talk on how youth leadership is essential for future progress. A talk on how youth leadership is essential for future progress.</p>
               <div class="card-footer">
                 <p class="speaker">Speaker: Leni Robredo</p>
+                <p class="classtype" hidden>Talk</p>
+                <p class="sgdtopic" hidden>SGD 1</p>
               </div>
             </div>
             <div class="col-sm-3 align-self-center" id="date-info">
@@ -145,17 +147,19 @@
       <div class="col-xl-5 col-md-12 mx-2 my-2" id="class-card">
         <div class="row justify-content-center class-row">
           <div class="col-sm-8 my-3" id="class-info">
-            <h5 class="title">Modern Art in the Philippines</h5>
+            <h5 class="title">Modern Art in the Philippines (11:00 AM, Talk, SGD 2)</h5>
             <p class="description">A talk about the current trends and creative styles of modern art in the Philippines.</p>
             <div class="card-footer">
               <p class="speaker">Speaker: Mr. Collado</p>
+              <p class="classtype" hidden>Talk</p>
+              <p class="sgdtopic" hidden>SGD 2</p>
             </div>
           </div>
           <div class="col-sm-3 align-self-center" id="date-info">
             <ul class="list-unstyled">
               <li class="month">October</li>
               <li class="day">22</li>
-              <li class="time">1:00 - 2:00</li>
+              <li class="time">11:00 - 12:00</li>
               <li class="location">Faura 205</li>
             </ul>
           </div>
@@ -166,17 +170,19 @@
         <a class="card-links" href="info.html">
           <div class="row justify-content-center class-row">
             <div class="col-sm-8 my-3" id="class-info">
-              <h5 class="title">Youth Leadership in Asian Development</h5>
+              <h5 class="title">Different Title 1 (10:00 AM, Talk, SGD 3)</h5>
               <p class="description">A talk on how youth leadership is essential for future progress. A talk on how youth leadership is essential for future progress. A talk on how youth leadership is essential for future progress.</p>
               <div class="card-footer">
                 <p class="speaker">Speaker: Leni Robredo</p>
+                <p class="classtype" hidden>Talk</p>
+                <p class="sgdtopic" hidden>SGD 3</p>
               </div>
             </div>
             <div class="col-sm-3 align-self-center" id="date-info">
               <ul class="list-unstyled" >
                 <li class="month">October</li>
                 <li class="day">21</li>
-                <li class="time">9:00 - 10:00</li>
+                <li class="time">10:00 - 11:00</li>
                 <li class="location">CTC 313</li>
               </ul>
             </div>
@@ -188,17 +194,19 @@
         <a class="card-links" href="info.html">
           <div class="row justify-content-center class-row">
             <div class="col-sm-8 my-3" id="class-info">
-              <h5 class="title">Youth Leadership in Asian Development</h5>
+              <h5 class="title">Different Title 2 (1:00 PM, Workshop, SGD 3)</h5>
               <p class="description">A talk on how youth leadership is essential for future progress. A talk on how youth leadership is essential for future progress. A talk on how youth leadership is essential for future progressA talk on how youth leadership is essential for future progress. A talk on how youth leadership is essential for future progress. A talk on how youth leadership is essential for future progress.A talk on how youth leadership is essential for future progress. A talk on how youth leadership is essential for future progress. A talk on how youth leadership is essential for future progress..</p>
               <div class="card-footer">
                 <p class="speaker">Speaker: Leni Robredo</p>
+                <p class="classtype" hidden>Workshop</p>
+                <p class="sgdtopic" hidden>SGD 3</p>
               </div>
             </div>
             <div class="col-sm-3 align-self-center" id="date-info">
               <ul class="list-unstyled" >
                 <li class="month">October</li>
                 <li class="day">21</li>
-                <li class="time">9:00 - 10:00</li>
+                <li class="time">1:00 - 2:00</li>
                 <li class="location">CTC 313</li>
               </ul>
             </div>
@@ -229,6 +237,7 @@
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script>
+
   //for filtering
   var getTime = document.getElementById("filterByTime");
   var getClassType = document.getElementById("filterByClassType");
@@ -238,52 +247,177 @@
   getSGDTopic.onchange = function(){filterIt();}
 
   function filterIt(){
-    //e.preventDefault();
+    //for filtering
     var timeValue  = getTime.options[getTime.selectedIndex].value.substr(0,5);
     var classTypeValue = getClassType.options[getClassType.selectedIndex].value;
     var SGDTopicValue = getSGDTopic.options[getSGDTopic.selectedIndex].value;
-    var getCards = document.getElementsByClassName("col-lg-5 col-md-12 mx-1 my-3");
-    for(var j = 0; j < getCards.length; j++){
-      var ClassTime = getCards[j].getElementsByClassName("time")[0];
-      //var ClassType = getCards[j].getElementsByClassName("classtype")[0]; //not yet implemented
-      //var SGDTopic = getCards[j].getElementsByClassName("sgdtopic")[0]; //not yet implemented
-      console.log(ClassTime.innerHTML.indexOf(timeValue))
-      if(ClassTime /*|| ClassType || SGDTopic*/){ //at this time hindi ko pa natetest pero gumagana siya for time so far
-        if(ClassTime.innerHTML.indexOf(timeValue) > -1 /*|| ClassType.innerHTML.indexOf(classTypeValue) > -1 || SGDTopic.innerHTML.indexOf(SGDTopicValue) > -1*/){
-          getCards[j].style.display = "";
-        }else{
-          getCards[j].style.display = "none";
+    var getCards = document.getElementsByClassName("col-xl-5 col-md-12 mx-2 my-2");
+    //for filtering and searching at the same time
+    var getTitleSearch = document.getElementsByClassName("form-control")[3].value;
+    if(timeValue != 'By Ti' && classTypeValue == 'By Class Type' && SGDTopicValue == 'By SGD Topic') {
+      console.log('Case 1')
+      for(var i = 0; i < getCards.length; i++){
+        var classTime1 = getCards[i].getElementsByClassName("time")[0];
+        if(classTime1){
+          if(getTitleSearch != ''){
+            var getTitle1 = getCards[i].getElementsByTagName("h5")[0];
+            if(classTime1.innerHTML.substr(0,5).indexOf(timeValue) > - 1 && getTitle1.innerHTML.toUpperCase().indexOf(getTitleSearch.toUpperCase()) > - 1) getCards[i].style.display = "";
+            else getCards[i].style.display = "none";
+          }else{
+            if(classTime1.innerHTML.substr(0,5).indexOf(timeValue) > - 1) getCards[i].style.display = "";
+            else getCards[i].style.display = "none";
+          }
+        }
+      }
+    }
+    if(timeValue == 'By Ti' && classTypeValue != 'By Class Type' && SGDTopicValue == 'By SGD Topic') {
+      console.log('Case 2')
+      for(var i = 0; i < getCards.length; i++){
+        var classType1 = getCards[i].getElementsByClassName("classtype")[0];
+        if(classType1){
+          if(getTitleSearch != ''){
+            var getTitle2 = getCards[i].getElementsByTagName("h5")[0];
+            if(classType1.innerHTML.indexOf(classTypeValue) > -1 && getTitle2.innerHTML.toUpperCase().indexOf(getTitleSearch.toUpperCase()) > - 1) 
+              getCards[i].style.display = "";
+            else getCards[i].style.display = "none";
+          }else{
+            if(classType1.innerHTML.indexOf(classTypeValue) > -1) getCards[i].style.display = "";
+            else getCards[i].style.display = "none";
+          }          
+        }
+      }
+    }
+    if(timeValue == 'By Ti' && classTypeValue == 'By Class Type' && SGDTopicValue != 'By SGD Topic') {
+      console.log('Case 3')
+      for(var i = 0; i < getCards.length; i++){
+        var classSGDTopic1 = getCards[i].getElementsByClassName("sgdtopic")[0];
+        if(classSGDTopic1){
+          if(getTitleSearch != ''){
+            var getTitle3 = getCards[i].getElementsByTagName("h5")[0];
+            if(classSGDTopic1.innerHTML.indexOf(SGDTopicValue) > -1 && getTitle3.innerHTML.toUpperCase().indexOf(getTitleSearch.toUpperCase()) > - 1) getCards[i].style.display = "";
+            else getCards[i].style.display = "none";
+          }else{
+            if(classSGDTopic1.innerHTML.indexOf(SGDTopicValue) > -1) getCards[i].style.display = "";
+            else getCards[i].style.display = "none";
+          }          
+        }
+      }
+    }
+    if(timeValue != 'By Ti' && classTypeValue != 'By Class Type' && SGDTopicValue == 'By SGD Topic') {
+      console.log('Case 4')
+      for(var i = 0; i < getCards.length; i++){
+        var classTime2 = getCards[i].getElementsByClassName("time")[0];
+        var classType2 = getCards[i].getElementsByClassName("classtype")[0];
+        if(classTime2 && classType2){
+          if(getTitleSearch != ''){
+            var getTitle4 = getCards[i].getElementsByTagName("h5")[0];
+            if(classTime2.innerHTML.substr(0,5).indexOf(timeValue) > -1 && classType2.innerHTML.indexOf(classTypeValue) > -1 && getTitle4.innerHTML.toUpperCase().indexOf(getTitleSearch.toUpperCase()) > - 1) getCards[i].style.display = "";
+            else getCards[i].style.display = "none";
+          }else{
+            if(classTime2.innerHTML.substr(0,5).indexOf(timeValue) > -1 && classType2.innerHTML.indexOf(classTypeValue) > -1) getCards[i].style.display = "";
+            else getCards[i].style.display = "none";
+          }          
+        }
+      }      
+    }
+    if(timeValue != 'By Ti' && classTypeValue == 'By Class Type' && SGDTopicValue != 'By SGD Topic') {
+      console.log('Case 5')
+      for(var i = 0; i < getCards.length; i++){
+        var classTime3 = getCards[i].getElementsByClassName("time")[0];
+        var classSGDTopic2 = getCards[i].getElementsByClassName("sgdtopic")[0];
+        if(classTime3 && classSGDTopic2){
+          if(getTitleSearch != ''){
+            var getTitle5 = getCards[i].getElementsByTagName("h5")[0];
+            if(classTime3.innerHTML.substr(0,5).indexOf(timeValue) > -1 && classSGDTopic2.innerHTML.indexOf(SGDTopicValue) > -1 && getTitle5.innerHTML.toUpperCase().indexOf(getTitleSearch.toUpperCase()) > - 1) getCards[i].style.display = "";
+            else getCards[i].style.display = "none";            
+          }else{
+            if(classTime3.innerHTML.substr(0,5).indexOf(timeValue) > -1 && classSGDTopic2.innerHTML.indexOf(SGDTopicValue) > -1) getCards[i].style.display = "";
+            else getCards[i].style.display = "none";
+          }          
+        }
+      }
+    }
+    if(timeValue == 'By Ti' && classTypeValue != 'By Class Type' && SGDTopicValue != 'By SGD Topic') {
+      console.log('Case 6')
+      for(var i = 0; i < getCards.length; i++){
+        var classType3 = getCards[i].getElementsByClassName("classtype")[0];
+        var classSGDTopic3 = getCards[i].getElementsByClassName("sgdtopic")[0];
+        if(classType3 && classSGDTopic3){
+          if(getTitleSearch != ''){
+            var getTitle6 = getCards[i].getElementsByTagName("h5")[0];
+            if(classType3.innerHTML.indexOf(classTypeValue) > -1 && classSGDTopic3.innerHTML.indexOf(SGDTopicValue) > -1 && getTitle6.innerHTML.toUpperCase().indexOf(getTitleSearch.toUpperCase()) > - 1) getCards[i].style.display = "";
+            else getCards[i].style.display = "none";            
+          }else{
+            if(classType3.innerHTML.indexOf(classTypeValue) > -1 && classSGDTopic3.innerHTML.indexOf(SGDTopicValue) > -1) getCards[i].style.display = "";
+            else getCards[i].style.display = "none";
+          }          
+        }
+      }
+    }
+    if(timeValue != 'By Ti' && classTypeValue != 'By Class Type' && SGDTopicValue != 'By SGD Topic') {
+      console.log('Case 7')
+      for(var i = 0; i < getCards.length; i++){
+        var classTime4 = getCards[i].getElementsByClassName("time")[0];
+        var classType4 = getCards[i].getElementsByClassName("classtype")[0];
+        var classSGDTopic4 = getCards[i].getElementsByClassName("sgdtopic")[0];
+        if(classTime4 && classType4 && classSGDTopic4){
+          if(getTitleSearch != ''){
+            var getTitle7 = getCards[i].getElementsByTagName("h5")[0];
+            if(classTime4.innerHTML.substr(0,5).indexOf(timeValue) > -1 && classType4.innerHTML.indexOf(classTypeValue) > -1 && classSGDTopic4.innerHTML.indexOf(SGDTopicValue) > -1 && getTitle7.innerHTML.toUpperCase().indexOf(getTitleSearch.toUpperCase()) > - 1) getCards[i].style.display = "";
+            else getCards[i].style.display = "none";
+          }else{
+            if(classTime4.innerHTML.substr(0,5).indexOf(timeValue) > -1 && classType4.innerHTML.indexOf(classTypeValue) > -1 && classSGDTopic4.innerHTML.indexOf(SGDTopicValue) > -1) getCards[i].style.display = "";
+            else getCards[i].style.display = "none"; 
+          }         
         }
       }
     }
   }
   //for searching
+
+  //check if user already filtered before searching
   document.getElementsByTagName("button")[1].onclick = function(){
     event.preventDefault();
-    searchIt();
+    var check1  = getTime.options[getTime.selectedIndex].value;
+    var check2 = getClassType.options[getClassType.selectedIndex].value;
+    var check3 = getSGDTopic.options[getSGDTopic.selectedIndex].value;
+    if(check1 == 'By Time' && check2 == 'By Class Type' && check3 == 'By SGD Topic') {
+      searchIt();
+    }
+    else{
+      filterIt();
+    } 
   }
 
   function searchIt(){
-    //reset filtering                                     
-    document.getElementById("filterByTime").value = 'By Time';
-    document.getElementById("filterByClassType").value = 'By Class Type';
-    document.getElementById("filterBySGDTopic").value = 'By SGD Topic';
     //search                                           
     var search = document.getElementsByClassName("form-control")[3];
     var filter = search.value;
-    var getCards = document.getElementsByClassName("col-lg-5 col-md-12 mx-1 my-3");
-    console.log(filter)
+    var getCards = document.getElementsByClassName("col-xl-5 col-md-12 mx-2 my-2");
     for(var i = 0; i < getCards.length; i++){
       var getTitle = getCards[i].getElementsByTagName("h5")[0];
       if(getTitle){
-        if(getTitle.innerHTML.indexOf(filter) > -1){
+        if(getTitle.innerHTML.toUpperCase().indexOf(filter.toUpperCase()) > -1){
           getCards[i].style.display = "";
         }else{
           getCards[i].style.display = "none";
         }
       }
     }
-  }                                         
+  }
+
+  //resetting everything
+  document.getElementById("reset-button").onclick = function(){
+    getTime.value = 'By Time';
+    getClassType.value = 'By Class Type';
+    getSGDTopic.value = 'By SGD Topic';
+    document.getElementsByClassName("form-control")[3].value = '';
+    document.getElementsByClassName("form-control")[3].placeholder = "Search for classes";
+    var showAllCards = document.getElementsByClassName("col-xl-5 col-md-12 mx-2 my-2");
+    for(var i = 0; i < showAllCards.length; i++){
+      showAllCards[i].style.display = "";
+    }  
+  }
   </script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
