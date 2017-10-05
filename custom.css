@@ -161,7 +161,7 @@ hr {
 	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
-/* -- CARD DECKS (Class Results) -- */
+/* --FILTERS -- */
 .hideoption { display:none; visibility:hidden; height:0; font-size:0; }
 
 #form-filters {
@@ -198,8 +198,8 @@ hr {
 }
 
 @media (max-width: 768px) {
-	#form-filters {
-		margin: 0;
+	#form-filters 
+	{		margin: 0;
 	}
 	#filterByTime, #filterByClassType, #filterBySGDTopic {
 		margin: 1.5% 0;
@@ -243,6 +243,33 @@ hr {
 
 }
 
+/* -- RESET BUTTON -- */
+
+#reset-button {
+	background-color: white;
+	margin-top: 2.5vh; 
+	text-align: center;
+	padding: 15px 15px 15px 15px;
+	border: solid 1px #e2e2e2;
+	width: 30%;
+
+}
+
+#reset-button:hover{
+	background-color: #fbfbfb;
+}
+@media (max-width: 1120px) {
+	#reset-button {
+		width: 60%;
+	}
+}
+
+@media (max-width: 768px) {
+	#reset-button {
+		width: 90%;
+	}
+}
+
 /* -- CARD DECKS (Class Results) -- */
 .title {
 	font-weight: 600;
@@ -262,9 +289,9 @@ hr {
 	color: #2c59eb;
 }
 
-.class-card {
-	box-shadow: 1px 1px 2px 0 rgba(210, 210, 210, 0.5);
-	border: solid 1px #f8f8f8;
+#class-card {
+	/**box-shadow: 1px 1px 2px 0 rgba(210, 210, 210, 0.5);*/
+	border: solid 1px #e2e2e2;
 }
 
 .month {
@@ -375,8 +402,8 @@ li #footer-icons {
 	}
 }
 
-/** SHOW BORDERS OF GRIDS**/
-/** <-- delete to use
+/** SHOW BORDERS OF GRIDS
+
 div[class="row"] {
 	border: 1px dotted rgba(0, 0, 0, 0.5);
 }
